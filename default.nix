@@ -14,6 +14,7 @@ in pkgs.mkShell {
     pkg-config
     rust-analyzer
     cargo-watch
+    cargo-udeps
   ];
 
   #

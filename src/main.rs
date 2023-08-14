@@ -76,7 +76,7 @@ fn parse_config(args: &[String]) -> Option<Config> {
         Some(Config::Reciever(duration))
     } else if args[1] == "both" {
         let rank = args.get(2).map(|x| x.parse().unwrap()).unwrap_or(0);
-        let duration = args.get(2).map(|x| x.parse().unwrap()).unwrap_or(2.0);
+        let duration = args.get(3).map(|x| x.parse().unwrap()).unwrap_or(2.0);
         Some(Config::Both(rank, duration))
     } else {
         None
